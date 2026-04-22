@@ -1,1 +1,45 @@
+# automatic paper grading app
+
+a streamlit app that grades arabic exam papers automatically using a vision language model (gemini) and NLP similarity scoring.
+
+## what it does
+
+you upload images of student exam papers, enter the model answers, and the app will:
+- extract the student's answers using gemini
+- compare them to the model answers
+- draw the grades directly on the paper image
+
+supports multiple choice, true/false, and written questions.
+
+## how to use it
+
+1. upload the exam papers (jpg, png, or pdf)
+2. enter the number of questions
+3. type in the model answer for each question
+4. adjust the strictness slider (0 = lenient, 1 = very strict)
+5. hit submit and wait for it to grade
+
+make sure all papers have the same questions.
+
+## stack
+
+- streamlit
+- google gemini (vision)
+- sentence-transformers (paraphrase-multilingual-mpnet-base-v2)
+- camel-tools (arabic preprocessing)
+- opencv, nltk, rapidfuzz
+
+## setup
+
+add your gemini api key to streamlit secrets:
+
+```
+GEMINI_API_KEY = "you can a free one there"
+```
+
+get a free key from [aistudio.google.com](https://aistudio.google.com)
+
+---
+
+project by: Ali Alsairafi
 
