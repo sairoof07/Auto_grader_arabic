@@ -1,6 +1,7 @@
 from transformers import pipeline
 
 import nltk
+nltk.download('stopwords')
 arabic_stops = nltk.corpus.stopwords.words('arabic')
 #general tools
 import cv2 
