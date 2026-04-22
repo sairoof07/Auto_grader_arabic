@@ -1,0 +1,13 @@
+streamlit
+google-generativeai
+Pillow
+opencv-python-headless
+numpy
+pandas
+matplotlib
+nltk
+rapidfuzz
+sentence-transformers
+transformers
+camel-tools
+torch
